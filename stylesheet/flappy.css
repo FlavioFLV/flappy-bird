@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Pixel';
+    src: url('../fonts/Pixel.ttf');
+}
+.fundo {
+    height: 50px;
+    background-color: rgb(219, 213, 121);
+    width: 1000px;
+}
+.conteudo {
+    background-color: #000022;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.start {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+.game-over {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    background-color: black;
+    width: 100%;
+    height: 100px;
+}
+.game-over-text {
+    font-family: Pixel;
+    font-size: 60px;
+    color: white;
+    margin: 0;
+}
+.play-again {
+    background-color: black;
+    outline: none;
+    font-family: Pixel;
+    font-size: 30px;
+    color: white;
+    -webkit-text-stroke: .5px red;
+    margin: 0;
+}
+a {
+    font-family: pixel;
+    font-size: 70px;
+    text-decoration: none;
+    color: red;
+    -webkit-text-stroke: 2px #FFF;
+    transition: font-size .05s;
+} a:hover {
+    color: rgb(187, 0, 0);
+    font-size: 78px;
+    cursor: pointer;
+}
+
+h2 {
+    font-family: Pixel;
+    background-image: linear-gradient(#f5f58b 50%, #5eff00 82%, white 1%);
+    color: transparent;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    /* color: white; */
+    margin: 0 0 10px;
+    -webkit-background-clip: text;
+}
+
+[wm-flappy] {
+    position: relative;
+    border-top: 5px solid dodgerblue;
+    height: 550px;
+    width: 1000px;
+    /* margin: 5px; */
+    background: linear-gradient(0, green 10%, deepskyblue 10%,white 150%);
+    overflow: hidden;
+    user-select: none;
+}
+
+.passaro {
+    position: absolute;
+    width: 40px;
+    left: calc(50% - 30px);
+}
+
+.par-de-barreiras {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.barreira {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barreira .borda {
+    height: 22px;
+    width: 97px;
+    background: linear-gradient(90deg, #639301, #A5E82E);
+    border: 2px solid black;
+}
+
+.barreira .corpo {
+    height: 30px;
+    width: 87px;
+    background: linear-gradient(90deg, #639301, #A5E82E);
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.progresso {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: Pixel;
+    font-size: 70px;
+    color: white;
+    z-index: 1;
+}
